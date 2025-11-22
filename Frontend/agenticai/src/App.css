@@ -1,0 +1,148 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+  min-height: 100vh;
+  color: #1f1f1f;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+form input {
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  width: 300px;
+  outline: none;
+  transition: 0.25s ease;
+  background: #fff;
+}
+
+form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  transform: scale(1.02);
+}
+
+form button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 14px;
+  background: #4a90e2;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  min-width: 150px;
+}
+
+form button:hover {
+  background: #357ac9;
+  transform: translateY(-1px);
+}
+
+form button:disabled {
+  background: #8db6e6;
+  cursor: not-allowed;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 25px;
+  border-radius: 18px;
+  margin-top: 25px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.4s ease;
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card p {
+  line-height: 1.55;
+  font-size: 15px;
+  white-space: pre-wrap;
+}
+
+textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border: 1px solid #bbb;
+  border-radius: 14px;
+  outline: none;
+  resize: vertical;
+  transition: 0.2s;
+}
+
+textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.25);
+  transform: scale(1.01);
+}
+
+.card button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  background: #333;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.card button:hover {
+  background: #000;
+  transform: translateY(-1px);
+}
+
+.card button+button {
+  background: #4a90e2;
+}
+
+.card button+button:hover {
+  background: #357ac9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
