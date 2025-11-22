@@ -47,7 +47,6 @@ npm start
 
 Once both services are running, the application will be available locally.
 Project Structure
-|
 ├── backend/        
 ├── frontend/       
 
